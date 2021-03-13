@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Typogtaphy,
   Button,
   Card,
   CardActions,
@@ -15,11 +14,11 @@ const CartItem = ({ item }) => {
   const classes = useStyles();
 
   return (
-    <Card>
+    <Card className="cart-item">
       <CardMedia
+        className={classes.media}
         // image={item.media.source}
         alt={item.name}
-        className={classes.media}
       />
       <CardContent className={classes.cardContent}>
         <Typography variant="h4">{item.name}</Typography>
