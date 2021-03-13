@@ -17,7 +17,7 @@ const CartItem = ({ item }) => {
     <Card className="cart-item">
       <CardMedia
         className={classes.media}
-        // image={item.media.source}
+        image={item.media.source}
         alt={item.name}
       />
       <CardContent className={classes.cardContent}>
