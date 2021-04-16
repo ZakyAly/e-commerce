@@ -5,8 +5,6 @@ import {
   Toolbar,
   IconButton,
   Badge,
-  // MenuItem,
-  // Menu,
   Typography,
 } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
@@ -41,18 +39,18 @@ const Navbar = ({ totalItems }) => {
           <div className={classes.grow} />
           {location.pathname === "/" && (
             <div className={classes.button}>
-              <Link to="/cart">
-                <IconButton
-                  component={Link}
-                  to="/cart"
-                  aria-label="Show cart item"
-                  color="inherit"
-                >
-                  <Badge badgeContent={totalItems} color="secondary">
-                    <ShoppingCart />
-                  </Badge>
-                </IconButton>
-              </Link>
+              {/* <Link to="/cart"> */}
+              <IconButton
+                component={Link}
+                to="/cart"
+                aria-label="Show cart items"
+                color="inherit"
+              >
+                <Badge badgeContent={totalItems} color="secondary">
+                  <ShoppingCart />
+                </Badge>
+              </IconButton>
+              {/* </Link> */}
             </div>
           )}
         </Toolbar>
