@@ -2,8 +2,8 @@
 
 [e-commerce App](https://e-commerce-the-dev-shop.netlify.app/).
 
-### Chec/commerce.js
+##### Chec/commerce.js
 
-### Material-ui
+##### Material-ui
 
-### Stripe
+##### Stripe
