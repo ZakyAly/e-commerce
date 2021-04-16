@@ -16,8 +16,9 @@ const Cart = ({
   const EmptyCart = () => {
     return (
       <Typography variant="subtitle1">
+        Cart is empty,
         <Link to="/" className={classes.link}>
-          Shopping Cart is empty, start adding some items!
+          click here!
         </Link>
       </Typography>
     );
